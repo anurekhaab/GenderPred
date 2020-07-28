@@ -7,6 +7,3 @@ jupyter
 gunicorn
 flask
 opencv-python
-libsm6
-libxext6
-libxrender-dev
