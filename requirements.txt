@@ -5,3 +5,5 @@ pandas
 sklearn
 jupyter
 gunicorn
+flask
+opencv-python
