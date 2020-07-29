@@ -55,7 +55,7 @@ def pipeline_model(path,filename,color='bgr'):
     
     cv2.imwrite('./static/predict/{}'.format(filename),img)
 
-def pipeline_model(img,color='rgb'):
+def pipeline_model1(img,color='rgb'):
     # step-2: convert into gray scale
     if color == 'bgr':
         gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)

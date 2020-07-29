@@ -35,7 +35,7 @@ def video(n=1):
             # Capture the video frame 
             # by frame 
             ret, frame = cap.read() 
-            frame = pipeline_model(frame,color='bgr')
+            frame = pipeline_model1(frame,color='bgr')
             # Display the resulting frame 
             cv2.imshow('frame', frame) 
             
@@ -61,7 +61,7 @@ def video(n=1):
             if ret == False:
                 break
 
-            frame = pipeline_model(frame,color='bgr')
+            frame = pipeline_model1(frame,color='bgr')
 
             cv2.imshow('Gender Detector',frame)
             
