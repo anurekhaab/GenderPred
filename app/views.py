@@ -3,6 +3,7 @@ from flask import redirect, url_for
 import os
 from PIL import Image
 from app.utils import pipeline_model
+from app.utils import pipeline_model1
 import cv2
 
 
@@ -69,7 +70,7 @@ def video(n=1):
                 break
         cv2.destroyAllWindows()
         cap.release()
-        return render_template('gendervideo.html',fileupload=True,video_name=filename, w=w)
+        return render_template('gendervideo.html',fileupload=True,video_name=filename)
 
 
     return render_template('gendervideo.html',fileupload=False,video_name="freeai.png")
